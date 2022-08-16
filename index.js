@@ -17,7 +17,6 @@ console.log(process.env.MONGO_URL)
 const PORT = process.env.PORT || 5000
 const MONGO_URI = process.env.MONGO_URL
 
-console.log(MONGO_URI, PORT)
 
 app.use(express.json())
 app.use(express.text())
