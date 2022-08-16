@@ -4,7 +4,7 @@ This is a simple server raised in express to connect to a hosted database on Mon
 
 ## Structure
 
-The server and connection to the database is made in the index.js file.
+The server and database connection is made on the index.js file.
 Also we have middleware functions like:
 
 
