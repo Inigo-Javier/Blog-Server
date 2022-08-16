@@ -8,7 +8,7 @@ The server and database connection is made on the index.js file.
 Also we have middleware functions like:
 
 
-|  middlewar    | http://localhost:PORT  | routes files  |
+|  middlewar    | ...://localhost:PORT   | routes files  |
 | ------------- |:----------------------:| -------------:|
 | app.use       | "/api/auth"            | auth.js       |
 | app.use       | "/api/users"           | categories.js |
