@@ -8,16 +8,18 @@ The server and connection to the database is made in the index.js file.
 Also we have middleware functions like:
 
 
-|  middlewar    | http://localhost:PORT+ | file          |
+|  middlewar    | http://localhost:PORT+ | routes files  |
 | ------------- |:----------------------:| -------------:|
 | app.use       | "/api/auth"            | auth.js       |
 | app.use       | "/api/users"           | categories.js |
 | app.use       | "/api/posts"           | posts.js      |
 | app.use       | "/api/categories"      | users.js      |
 
-to access routes
+to access routes.
 
-In the routes folder we have auth.js,categories.js,posts.js and users.js files.
+
+
+
 
 
 
