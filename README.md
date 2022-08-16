@@ -8,7 +8,7 @@ The server and connection to the database is made in the index.js file.
 Also we have middleware functions like:
 
 
-|  middlewar    | http://localhost:PORT+ | routes files  |
+|  middlewar    | http://localhost:PORT  | routes files  |
 | ------------- |:----------------------:| -------------:|
 | app.use       | "/api/auth"            | auth.js       |
 | app.use       | "/api/users"           | categories.js |
@@ -18,7 +18,37 @@ Also we have middleware functions like:
 to access routes.
 
 
+### auth.js
 
+| Description              | route                  | method        |
+| ------------------------ |:----------------------:| -------------:|
+| create user              | "/register"            | post          |
+| login user               | "/login"               | post          |
+
+### categories.js
+
+| Description              | route                  | method        |
+| ------------------------ |:----------------------:| -------------:|
+| create categorie         | "/"                    | post          |
+| find categorie           | "/"                    | get           |
+
+### posts.js
+
+| Description              | route                  | method        |
+| ------------------------ |:----------------------:| -------------:|
+| create post              | "/"                    | post          |
+| update post              | "/:id"                 | put           |
+| delete post              | "/:id"                 | delete        |
+| find all post            | "/:id"                 | get           |
+| find a post by query     | "/?user=name"          | get           |
+ 
+### user.js
+
+| Description              | route                  | method        |
+| ------------------------ |:----------------------:| -------------:|
+| update user              | "/:id"                 | put           |
+| delete user              | "/:id"                 | delete        |
+| find user                | "/:id"                 | get           |
 
 
 
