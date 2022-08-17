@@ -1,6 +1,6 @@
 # Blog-Server project
 ## Introduction
-This is a simple server raised in express to connect to a hosted database on Mongo Atlas.The main reason is to give data for a User Interface maked on ReactJs.
+This is a simple server raised in express to connect to a database hosted on Mongo Atlas.The main reason is to give data for a User Interface maked on ReactJs.
 
 ## Structure
 
