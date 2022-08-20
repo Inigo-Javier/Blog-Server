@@ -17,7 +17,9 @@ Also we have middleware functions like:
 
 to access routes.
 
-|  function     | localhost:PORT         | routes files  |
+### multer
+
+|  function     | localhost:PORT         | in file       |
 | ------------- |:----------------------:| -------------:|
 | multer        | "/api/upload"          | index.js      |
 
