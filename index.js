@@ -6,8 +6,9 @@ const authRoute = require("./routes/auth")
 const usersRoute = require("./routes/users")
 const postsRoute = require("./routes/posts")
 const categoryRoute = require("./routes/categories")
-const multer = require("multer")
 const cors = require("cors");
+const multer = require("multer")
+const path = require("path")
 
 dotenv.config()
 
@@ -25,7 +26,9 @@ app.use(
         credentials: true,
         origin: process.env.ORIGIN || "http://localhost:3000",
     })
-);
+)
+app.use("/images", express.static(path.join(__dirname, "/images")));
+
 
 mongoose
     .connect(MONGO_URI, {
@@ -41,7 +44,7 @@ const storage = multer.diskStorage({
         cb(null, "images");
     },
     filename: (req, file, cb) => {
-        cb(null, "hello.jpg");
+        cb(null, req.body.name);
     },
 });
 
