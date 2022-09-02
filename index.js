@@ -21,12 +21,7 @@ const MONGO_URI = process.env.MONGO_URL
 
 app.use(express.json())
 app.use(express.text())
-app.use(
-    cors({
-        credentials: true,
-        origin: process.env.ORIGIN || "http://localhost:3000",
-    })
-)
+app.use(cors())
 app.use("/images", express.static(path.join(__dirname, "/images")));
 
 
