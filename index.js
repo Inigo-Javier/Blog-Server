@@ -59,11 +59,10 @@ app.use("/api/users", usersRoute)
 app.use("/api/posts", postsRoute)
 app.use("/api/categories", categoryRoute)
 
-app.use(express.static(path.join(__dirname, "/blog-client/build")));
 
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '/blog-client/build', 'index.html'));
-});
+app.get('/', (req, res) => {
+    res.send('inigo-blog IS RUNNING, !!!!!')
+})
 
 app.listen(PORT, () => {
     console.log(`Backend is runing on port ${PORT}.`)
