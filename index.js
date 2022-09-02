@@ -53,6 +53,7 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
     res.status(200).json("File has been uploaded");
 });
 
+
 app.use("/api/auth", authRoute)
 app.use("/api/users", usersRoute)
 app.use("/api/posts", postsRoute)
