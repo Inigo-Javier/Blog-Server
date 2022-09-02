@@ -6,7 +6,7 @@
   "type": "commonjs",
   "scripts": {
     "start": "node ./index.js",
-    "dev": "nodemon ./index.js"
+    "heroku-postbuild": "cd blog-client && npm install && npm run build"
   },
   "author": "iñigo Malluguiza Castro",
   "license": "ISC",
